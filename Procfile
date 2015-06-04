@@ -1,0 +1,1 @@
+web: gunicorn houses.wsgi --log-file -
