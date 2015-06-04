@@ -18,7 +18,7 @@ class PropertyFilter(django_filters.FilterSet):
 
 
 def search(request):
-    file = open(settings.BASE_DIR + '/IslandRentals.json')
+    file = open(settings.BASE_DIR + '/houses/IslandRentals.json')
     data = json.load(file)
     file.close()
     data = data['property']
